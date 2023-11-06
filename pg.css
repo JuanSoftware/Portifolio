@@ -1,0 +1,51 @@
+/* Estilo para o corpo (body) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+header a {
+    font-size: 24px; /* Tamanho do texto */
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-left: 50%;
+}
+
+
+/* Estilo para os títulos (h1 e h2) */
+h1, h2 {
+    color: #333;
+}
+
+/* Estilo para os contêineres (containers) */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para o rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para os parágrafos (p) */
+p {
+    line-height: 1.5;
+}
+
+/* Estilo para links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

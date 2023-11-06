@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pg.css">
+    <title>Projeto 1</title>
+</head>
+
+<body>
+    <header class="purple-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="index.html">Início</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section class="jumbotron text-center">
+            <h1 class="display-4">🏥 Sistema Consultório</h1>
+            <p class="lead">Este projeto é um sistema de agendamento de consultas médicas desenvolvido em .NET e integrado com um banco de dados SQL Server. Ele tem como objetivo simplificar o processo de marcação de consultas para clientes, médicos e administradores. O sistema inclui funcionalidades de login com diferentes níveis de acesso, permitindo que os usuários acessem as funcionalidades adequadas com base em suas permissões.</p>
+        </section>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Login.png" alt="Sua Imagem" class="img-fluid custom-image">
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Autenticação e Controle de Acesso 📝:</h2>
+                        <p>O sistema inclui um mecanismo de autenticação que requer que os usuários façam login com um nome de usuário (login) e senha. Dependendo do tipo de usuário (cliente, médico ou administrador), os usuários têm permissões diferentes no sistema. Isso é alcançado por meio de checkboxes na interface do usuário que os usuários selecionam durante o login, determinando sua função no sistema. Com base na seleção, o sistema decide a qual tabela do banco de dados deve se conectar para autenticar o usuário e fornecer as funcionalidades apropriadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Marcação de Consultas 🗓️:</h2>
+                        <p>O sistema permite que os clientes marquem consultas, selecionando uma especialidade médica, um médico disponível e uma data. Ele também oferece recursos de gerenciamento para médicos e administradores, incluindo a capacidade de visualizar e aprovar consultas agendadas. Os clientes têm acesso ao seu histórico de consultas, enquanto os administradores podem gerenciar as informações dos usuários e as configurações do sistema.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Cliente.png" alt="Outra Imagem" class="img-fluid custom-image">
+            </div>
+        </div>
+        <div class="my-4"></div> <!-- Espaçamento aprimorado -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Adm.png" alt="Sua Imagem" class="img-fluid custom-image">
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Estrutura de Dados 💼:</h2>
+                        <p>O projeto é estruturado em torno de quatro principais entidades no banco de dados: "Cliente," "Médico," "Administrador" e "Consulta." Cada uma dessas entidades possui atributos específicos, como nome, especialidade, CPF, email, data de nascimento, login e senha. As tabelas do banco de dados armazenam informações relacionadas a essas entidades, permitindo o agendamento de consultas, autenticação de usuários e gerenciamento das operações de agendamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Médico 👨‍⚕️</h2>
+                        <p>No sistema de agendamento de consultas, os médicos desempenham um papel crucial, sendo profissionais de saúde com especialidades variadas. Eles têm acesso ao sistema por meio de credenciais de login, o que lhes permite visualizar e gerenciar consultas marcadas com eles. Uma funcionalidade significativa é a capacidade de gerar um PDF que contém informações detalhadas sobre as consultas agendadas, facilitando o acompanhamento e a organização de sua agenda de atendimento, além de oferecer um meio de registro e comunicação eficaz com pacientes e outros profissionais de saúde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Medico.png" alt="Imagem de Médico" class="img-fluid custom-image">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

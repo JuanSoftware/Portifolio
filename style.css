@@ -1,0 +1,98 @@
+/* Define as propriedades padrão para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #8a2be2;
+    color: #fff;
+    padding: 40px 0;
+}
+
+header img.profile-picture {
+    width: 100px; /* Ajuste a largura conforme preferir */
+    height: auto; /* Mantenha a proporção da imagem */
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Estilos para o conteúdo do site */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para os projetos */
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.project h2 {
+    color: #8a2be2;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #8a2be2;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Estilos para a lista de habilidades */
+.skills {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+.skills li {
+    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px solid #8a2be2;
+}
+
+/* Estilos para as imagens dos projetos */
+.project img {
+    max-width: 100%; /* Garante que as imagens não excedam a largura do contêiner */
+    display: block; /* Centraliza a imagem horizontalmente */
+    margin: 0 auto; /* Centraliza a imagem verticalmente */
+}
+
+/* Estilos para o texto de sobreposição no hover dos projetos */
+.texto-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    transition: opacity 0.3s;
+}
+
+.project:hover .texto-hover {
+    opacity: 1;
+}
+
+/* Estilos personalizados */
+.custom-image {
+    max-width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.spacer {
+    margin: 20px 0;
+}
