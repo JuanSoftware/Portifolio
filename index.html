@@ -4,90 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
     <title>Meu Portfólio</title>
+    <style>
+        .profile-picture {
+            border-radius: 50%;
+            max-width: 150px;
+        }
+        .card-custom {
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .skills .fa {
+            color: #007bff;
+        }
+        h1, p.lead {
+            color: #004282; /* Azul escuro */
+        }
+        
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="Juan.jpg" alt="Sua Foto" class="profile-picture img-fluid">
-                </div>
-                <div class="col-md-8">
-                    <h1>Juan Santos de Oliveira</h1>
-                    <p>Desenvolvedor Full-Stack</p>
-                </div>
-            </div>
+    <header class="bg-light py-4">
+        <div class="container text-center">
+            <img src="Juan.jpg" alt="Sua Foto" class="profile-picture img-fluid">
+            <h1 class="mt-3">Juan Santos de Oliveira</h1>
+            <p class="lead">Desenvolvedor Full-Stack</p>
         </div>
     </header>
 
     <main>
-        <section id="contato" class="container">
-            <h2>Informações de Contato</h2>
-            <p>E-mail: <a href="mailto:juan.contato0101@gmail.com">juan.contato0101@gmail.com</a></p>
-            <p>Telefone: (92) 98466-0400</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/juan-santos-de-oliveira-96ab98235/">Perfil no LinkedIn <i class="fa fa-linkedin"></i></a></p>
+        <section id="contato" class="container my-5">
+            <h2 class="text-center mb-4"><i class="fa fa-envelope icon"></i>Informações de Contato</h2>
+            <div class="card card-custom p-3">
+                <p><i class="fa fa-envelope icon"></i>E-mail: <a href="mailto:juan.contato0101@gmail.com">juan.contato0101@gmail.com</a></p>
+                <p><i class="fa fa-phone icon"></i>Telefone: (92) 98466-0400</p>
+                <p><i class="fa fa-linkedin icon"></i>LinkedIn: <a href="https://www.linkedin.com/in/juan-santos-96ab98235/">Perfil no LinkedIn <i class="fa fa-linkedin"></i></a></p>
+            </div>
         </section>
 
-        <section id="habilidades" class="container">
-            <h2>Habilidades e Experiência</h2>
-            <ul class="list-group skills">
-                <li class="list-group-item">Linguagens de programação: PHP, JavaScript, C#, TypeScript</li>
-                <li class="list-group-item">Frameworks: Xamarin, ASP.NET, .NET Framework, .NET Core, Angular</li>
-                <li class="list-group-item">Banco de Dados: MySQL, SQL Server</li>
-                <li class="list-group-item">Desenvolvimento de jogos: Unity</li>
-                <li class="list-group-item">Metodologias Ágeis: Scrum</li>
-            </ul>
+        <section id="habilidades" class="container my-5">
+            <h2 class="text-center mb-4"><i class="fa fa-cogs icon"></i>Habilidades e Experiência</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-code icon"></i>Linguagens de Programação</h4>
+                        <p>Python, C#, TypeScript</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-wrench icon"></i>Frameworks</h4>
+                        <p>Django, ASP.NET, .NET Core, Angular, Node.js</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-database icon"></i>Banco de Dados</h4>
+                        <p>MySQL, SQL Server, PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-cube icon"></i>Containers</h4>
+                        <p>Docker</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-gamepad icon"></i>Desenvolvimento de Jogos</h4>
+                        <p>Unity</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-tasks icon"></i>Metodologias Ágeis</h4>
+                        <p>Scrum</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
 
-        <section id="projetos" class="container">
-            <h2>Meus Projetos</h2>
-
-            <div class="project">
-                <a href="pj1.html">
-                    <h2>1. Plataforma de E-commerce em PHP <i class="fa fa-shopping-cart"></i></h2>
-                </a>
-                <p>Desenvolvi uma plataforma de comércio eletrônico completa em PHP, incluindo recursos como pesquisa de produtos, carrinho de compras e checkout seguro.</p>
-                <img src="projeto1.jpg">
-            </div>
-            
-            <div class="project">
-                <a href="pj2.html">
-                    <h2>2. Crachá Virtual para IFAM (PHP) <i class="fa fa-id-card"></i></h2>
-                </a>
-                <p>Criei um sistema de crachá virtual personalizado para o Instituto Federal do Amazonas (IFAM) usando PHP. O sistema permite a geração de crachás online para a comunidade acadêmica.</p>
-                <img src="tela3.gif">
-            </div>
-
-            <div class="project">
-                <a href="pj3.html">
-                    <h2>3. Sistema de Marcação de Consultas (.NET) <i class="fa fa-calendar"></i></h2>
-                </a>
-                <p>Desenvolvi um sistema eficiente para marcação de consultas e gerenciamento de agendas em C# e .NET.</p>
-                <img src="Login.png">
-            </div>
-
-            <div class="project">
-                <a href="pj4.html">
-                    <h2>4. Desenvolvimento de Jogos na Unity <i class="fa fa-gamepad"></i></h2>
-                </a>
-                <p>Possuo experiência em programação e design de jogos na plataforma Unity, incluindo a criação de jogos para entretenimento e aprendizado.</p>
-                <img src="HillClimb.gif">
+        <section id="projetos" class="container my-5">
+            <h2 class="text-center mb-4"><i class="fa fa-folder-open icon"></i>Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-shopping-cart icon"></i>Plataforma de E-commerce em PHP</h4>
+                        <p>Desenvolvi uma plataforma de comércio eletrônico completa em PHP, incluindo pesquisa de produtos, carrinho de compras e checkout seguro.</p>
+                        <img src="projeto1.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-id-card icon"></i>Crachá Virtual para IFAM</h4>
+                        <p>Criei um sistema de crachá virtual personalizado para o Instituto Federal do Amazonas (IFAM) usando PHP. O sistema permite a geração de crachás online.</p>
+                        <img src="tela3.gif" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-calendar icon"></i>Sistema de Marcação de Consultas</h4>
+                        <p>Desenvolvi um sistema eficiente para marcação de consultas e gerenciamento de agendas em C# e .NET.</p>
+                        <img src="Login.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-3">
+                        <h4><i class="fa fa-gamepad icon"></i>Desenvolvimento de Jogos na Unity</h4>
+                        <p>Possuo experiência em programação e design de jogos na plataforma Unity, incluindo a criação de jogos para entretenimento e aprendizado.</p>
+                        <img src="HillClimb.gif" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            &copy; 2023 Juan Santos de Oliveira
-        </div>
+    <footer class="bg-light text-center py-3">
+        &copy; 2023 Juan Santos de Oliveira
     </footer>
 </body>
 </html>
